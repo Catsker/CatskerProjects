@@ -1,0 +1,20 @@
+.test {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.test div {
+    border: 1px seagreen solid;
+    flex-basis: auto;
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(132, 135, 137);
+    font-style: italic;
+    /* line-height: 1.286; */
+    text-align: right;
+    margin: 0 6px;
+    
+}
