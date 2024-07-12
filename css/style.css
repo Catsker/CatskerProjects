@@ -234,43 +234,57 @@ section {
     background-color: #565a5d;
 }
 
+
+
+
+
+
+
 .ph {
     display: flex;
-    width: 100%;
-}
-
-.ph1, .ph3 {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 33.333%;
-}
-
-.ph2 {
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    flex: 0 0 33.333%;
-
 }
 
-.ph2_ {
-    flex: 0 0 50%;
-}
-
-.ph1_ {
+.hor, .vert {
     display: flex;
+    flex-wrap: nowrap;
+}
+
+.hor {
+    flex-direction: column;
+}
+
+.vert {
     flex-direction: row;
 }
 
-.ph_ {
-    flex: 0 0 50%;
-}
-
-
-.ph3_2_ {
+.hor > div, .vert > div {
+    flex: 1;
     display: flex;
-    flex-direction: row;
 }
+
+.col {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col_img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
 
 .disc {
     background-color: #282f35;
@@ -377,13 +391,29 @@ input::placeholder {
 }
 
 .bggreen {
-    height: 100%;
+    display: flex;
     position: relative;
-}
-
-.bggreen img {
     object-fit: cover;
 }
+
+.ph2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* flex: 1 1 50%; */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .ph_logo svg {
@@ -538,8 +568,10 @@ footer {
     }
 
     .ph {
-        display: block;
+        flex-direction: column;
     }
+
+
 
     .header_title_wrapper {
         width: 70%;
@@ -613,3 +645,4 @@ footer {
         font-size: 10px;
     }
 }
+
